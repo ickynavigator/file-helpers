@@ -10,6 +10,12 @@ export default defineConfig({
       exclude: ['**/*.test.ts', '**/node_modules/**', '**/tests/**'],
       reporter: ['text', 'html', 'json', 'lcov'],
       provider: 'istanbul',
+      thresholds: {
+        statements: 100,
+        branches: 100,
+        functions: 100,
+        lines: 100,
+      },
     },
   },
 });
