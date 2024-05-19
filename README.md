@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/ickynavigator/file-helpers/graph/badge.svg?token=T3C3PSOFE2)](https://codecov.io/gh/ickynavigator/file-helpers)
+
 # file-helpers
 
 This is a simple project that demonstrates how to handle files in the browser. It has helpers for converting the file from base 64 to a blob and vice versa.
