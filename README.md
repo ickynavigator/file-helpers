@@ -23,4 +23,4 @@ This project was created using `bun init` in bun v1.1.8. [Bun](https://bun.sh) i
 
 ## Coverage
 
-- [Istanbul](https://ickynavigator.github.io/file-helpers/)
+- [Istanbul](https://ickynavigator.github.io/file-helpers/lcov-report/index.html)

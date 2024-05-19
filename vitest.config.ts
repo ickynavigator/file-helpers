@@ -8,7 +8,7 @@ export default defineConfig({
     environment: 'jsdom',
     coverage: {
       exclude: ['**/*.test.ts', '**/node_modules/**', '**/tests/**'],
-      reporter: ['text', 'html', 'json', 'lcov'],
+      reporter: ['text', 'json', 'lcov'],
       provider: 'istanbul',
       thresholds: {
         statements: 100,
