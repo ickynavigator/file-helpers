@@ -31,4 +31,5 @@ function getMockedFile() {
   return MockedFile;
 }
 
-export default getMockedFile;
+global.File = getMockedFile();
+global.URL.createObjectURL = vi.fn(() => 'VALID URL');
