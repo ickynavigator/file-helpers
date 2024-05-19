@@ -1,0 +1,16 @@
+{
+  "name": "file-helpers",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "vitest --coverage"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.3",
+    "@types/jsdom": "^21.1.6",
+    "@vitest/coverage-istanbul": "^1.6.0",
+    "jsdom": "^24.0.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
