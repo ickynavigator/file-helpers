@@ -20,7 +20,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -32,11 +32,11 @@ jobs:
       - name: install dependencies
         run: bun install
 
-      - name: build
+      - name: test
         run: bun run test
 
   deploy:
-    needs: [build]
+    needs: [test]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -55,7 +55,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
   codecov:
-    needs: [build, deploy]
+    needs: [test, deploy]
     runs-on: ubuntu-latest
     steps:
       - name: Upload coverage reports to Codecov
