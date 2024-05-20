@@ -39,7 +39,7 @@ jobs:
         run: bun run test
 
       - name: upload coverage report
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: coverage
           key: ${{ runner.os }}-coverage-${{ env.cache-name }}
@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: download coverage report
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: coverage
           key: ${{ runner.os }}-coverage-${{ env.cache-name }}
