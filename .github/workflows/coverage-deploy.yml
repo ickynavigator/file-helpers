@@ -20,7 +20,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  cache-name: coverage
+  cache-name: cache-${{ github.sha }}
 
 jobs:
   test:
