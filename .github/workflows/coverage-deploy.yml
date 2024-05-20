@@ -35,6 +35,16 @@ jobs:
       - name: test
         run: bun run test
 
+      - name: cache coverage report
+        uses: actions/cache@v2
+        env:
+          cache-name: coverage
+        with:
+          path: coverage
+          key: ${{ runner.os }}-coverage-${{ env.cache-name }}
+          restore-keys: |
+            ${{ runner.os }}-coverage-
+
   deploy:
     needs: [test]
     environment:
